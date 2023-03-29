@@ -1,16 +1,24 @@
 public class Main {
     public static void main(String[] args) {
-        int Account = 13;
-        int Pay = 999;
-        int Border = 1000;
-        int Rule = 100;
+        int account = 13;
+        int pay = 1999;
+        int border = 1000;
+        int rule = 100;
 
-        if (Pay < Border) {
-            System.out.println(Pay + Account);
+        if (pay < border) {
+            System.out.println("Ваш счёт:");
+            System.out.println(pay + account);
+            System.out.println("рублей");
+            System.out.println("Ваш бонус 0 рублей");
         } else {
-            int Bonus = Pay / Rule;
-            int RealBonus = ((Bonus * Rule) > Pay) ? (Account + Pay + (Bonus - 1)) : (Account + Pay + Bonus);
-            System.out.println(RealBonus);
+            int bonus = pay / rule;
+            int realbonus = ((bonus * rule) > pay) ? (account + pay + (bonus - 1)) : (account + pay + bonus);
+            System.out.println("Ваш счёт:");
+            System.out.println(realbonus);
+            System.out.println("рублей");
+            System.out.println("Ваш бонус:");
+            System.out.println(realbonus - account - pay);
+            System.out.println("рублей");
         }
     }
 }
