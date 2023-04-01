@@ -12,12 +12,12 @@ public class Main {
             System.out.println("Ваш бонус 0 рублей");
         } else {
             int bonus = pay / rule;
-            int realbonus = ((bonus * rule) > pay) ? (account + pay + (bonus - 1)) : (account + pay + bonus);
+            int realBonus = ((bonus * rule) > pay) ? (account + pay + (bonus - 1)) : (account + pay + bonus);
             System.out.println("Ваш счёт:");
-            System.out.println(realbonus);
+            System.out.println(realBonus);
             System.out.println("рублей");
             System.out.println("Ваш бонус:");
-            System.out.println(realbonus - account - pay);
+            System.out.println(realBonus - account - pay);
             System.out.println("рублей");
         }
     }
